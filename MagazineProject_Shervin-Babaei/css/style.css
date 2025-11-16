@@ -1,0 +1,171 @@
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+    color: black;
+}
+
+.page-container {
+    margin: 0 auto;
+}
+
+/* Header (outer wrapper, no color needed here) */
+header {
+    width: 100%;
+}
+
+/* Header inner (the part that stays at 1600px) */
+.header-inner {
+    margin: 0 auto;
+    background-color: #ffa600;
+    border-bottom: 3px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Header top (title + search) */
+.header-top h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.search-form {
+    display: block;
+    margin: 0 auto 0.75rem auto;
+}
+
+.search-form input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Navigation */
+.navigation {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.navigation a {
+    display: inline-block;
+    margin: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.75s ease;
+}
+
+.navigation a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Main content wrapper */
+.wrapper {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Featured article */
+.featured-article {
+    background-color: #fff3cd;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.featured-article h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Articles grid */
+.articles-grid {
+    text-align: center;
+}
+
+.articles-grid .article {
+    display: block;
+    margin: 0.5rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Media queries */
+@media screen and (max-width: 500px) {
+    .header-top h1,
+    .search-form {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-top h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-form input {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Keep nav horizontal */
+    .navigation {
+        white-space: nowrap;
+        overflow-x: auto;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .navigation a {
+        display: inline-block;
+        width: auto;
+        margin: 0.25rem;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-inner {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    .search-form {
+        padding-top: 0.8rem;
+    }
+
+    .search-article-bar {
+        grid-column: 3;
+    }
+
+    .navigation {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
