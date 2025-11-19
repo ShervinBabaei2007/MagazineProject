@@ -113,7 +113,7 @@ header {
 /* first section of homepage article */
 .article h3 {
     text-align: left;
-    margin-top: 4rem;
+    margin-top: 1.75rem;
 }
 
 .article h4 {
@@ -126,6 +126,10 @@ header {
     display: inline-block;
 
     margin-top: 1rem;
+}
+
+.articles-grid .article {
+    margin-top: 2rem;
 }
 
 .article-paragaph .paragaph {
@@ -163,6 +167,9 @@ header {
 .paragaph .spacing {
     margin-top: 1rem;
 }
+
+/* NOTE TO SELF: Above is mobile */
+
 
 /* Media queries */
 @media screen and (max-width: 500px) {
