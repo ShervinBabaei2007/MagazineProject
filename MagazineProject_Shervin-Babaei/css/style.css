@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
 /* Reset everything */
 * {
     margin: 0;
@@ -6,9 +8,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: lightskyblue;
     color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fredoka', sans-serif;
 }
 
 .page-container {
@@ -20,10 +28,9 @@ header {
     width: 100%;
 }
 
-/* Header inner (the part that stays at 1600px) */
 .header-inner {
     margin: 0 auto;
-    background-color: #ffa600;
+    background-color: #fff3b0;
     border-bottom: 3px solid black;
     padding: 1rem;
     text-align: center;
@@ -66,12 +73,12 @@ header {
     padding: 0.5rem 1rem;
     border: 2px solid black;
     border-radius: 8px;
-    transition: all 0.75s ease;
+    transition: all 0.5s ease;
 }
 
 .navigation a:hover {
-    background-color: black;
-    color: white;
+    background-color: #333;
+    color: #fff3b0;
 }
 
 /* Main content wrapper */
@@ -83,8 +90,8 @@ header {
 
 /* Featured article */
 .featured-article {
-    background-color: #fff3cd;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #fff3b0;
+    font-family: 'Nunito', sans-serif;
     border: 2px solid black;
     border-radius: 8px;
     padding: 1rem;
@@ -136,7 +143,7 @@ header {
     display: block;
     margin: 0.5rem;
     border: 2px solid black;
-    background-color: orange;
+    background-color: #fff3b0;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -153,8 +160,8 @@ header {
 
 .readMore {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: black;
+    padding: 0.5rem 1.2rem;
+    background-color: #333;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -162,6 +169,12 @@ header {
 
     margin-top: 1.125rem;
     margin-bottom: 0;
+
+    transition: background-color 0.5s ease;
+}
+
+.readMore:hover {
+    background-color: #555;
 }
 
 .paragaph .spacing {
@@ -169,7 +182,6 @@ header {
 }
 
 /* NOTE TO SELF: Above is mobile */
-
 
 /* Media queries */
 @media screen and (max-width: 500px) {
