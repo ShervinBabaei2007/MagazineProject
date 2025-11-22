@@ -87,7 +87,46 @@ header {
     padding: 0 1rem;
 }
 
-.allArticles .article {
-    
+.allArticles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
+.allArticles .article {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.multiParagraph {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #e0f7ff;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.allArticles .article img {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.bold-heading {
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
