@@ -1,6 +1,7 @@
+/* 1. Fonts & Imports */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
 
-/* Reset everything */
+/* 2. Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +24,7 @@ h3 {
     margin: 0 auto;
 }
 
-/* Header (outer wrapper, no color needed here) */
+/* 3. Header Styles */
 header {
     width: 100%;
 }
@@ -36,12 +37,12 @@ header {
     text-align: center;
 }
 
-/* Header top (title + search) */
 .header-top h1 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
+/* 4. Search Form */
 .search-form {
     display: block;
     margin: 0 auto 0.75rem auto;
@@ -56,7 +57,7 @@ header {
     max-width: 400px;
 }
 
-/* Navigation */
+/* 5. Navigation */
 .navigation {
     display: block;
     text-align: center;
@@ -81,17 +82,16 @@ header {
     color: #fff3b0;
 }
 
-/* Main content wrapper */
+/*  6. Main Content Wrapper */
 .wrapper {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Featured article */
+/* 7. Featured Article (Homepage) */
 .featured-article {
     background-color: #fff3b0;
-    font-family: 'Nunito', sans-serif;
     border: 2px solid black;
     border-radius: 8px;
     padding: 1rem;
@@ -102,14 +102,14 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* Articles grid */
+/* 8. Articles Grid & Individual Article */
 .articles-grid {
     text-align: center;
 }
 
 .articles-grid .article {
     display: block;
-    margin: 1rem;
+    margin: 2rem 1rem 0 1rem;
     border: 2px solid black;
     border-radius: 8px;
     background-color: #fff;
@@ -117,7 +117,6 @@ header {
     box-sizing: border-box;
 }
 
-/* first section of homepage article */
 .article h3 {
     text-align: left;
     margin-top: 1.75rem;
@@ -131,14 +130,10 @@ header {
     max-width: 100%;
     height: auto;
     display: inline-block;
-
     margin-top: 1rem;
 }
 
-.articles-grid .article {
-    margin-top: 2rem;
-}
-
+/* Article paragraph box */
 .article-paragaph .paragaph {
     display: block;
     margin: 0.5rem;
@@ -152,7 +147,11 @@ header {
     text-align: left;
 }
 
-/* Read More (goes in depth in article) */
+.paragaph .spacing {
+    margin-top: 1rem;
+}
+
+/* 9. Read More Buttons */
 .ReadMore {
     text-align: left;
     margin-top: 1rem;
@@ -166,10 +165,8 @@ header {
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
-
     margin-top: 1.125rem;
     margin-bottom: 0;
-
     transition: background-color 0.5s ease;
 }
 
@@ -177,13 +174,9 @@ header {
     background-color: #555;
 }
 
-.paragaph .spacing {
-    margin-top: 1rem;
-}
+/* 10. Media Queries */
 
-/* NOTE TO SELF: Above is mobile */
-
-/* Media queries */
+/* Mobile Styles */
 @media screen and (max-width: 500px) {
     .header-top h1,
     .search-form {
@@ -203,7 +196,6 @@ header {
         margin: 0 auto;
     }
 
-    /* Keep nav horizontal */
     .navigation {
         white-space: nowrap;
         overflow-x: auto;
@@ -220,6 +212,7 @@ header {
     }
 }
 
+/* Desktop Styles */
 @media screen and (min-width: 1000px) {
     .header-inner {
         display: grid;

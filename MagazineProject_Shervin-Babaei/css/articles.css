@@ -1,0 +1,93 @@
+/* 1. Fonts & Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+/* 2. Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: lightskyblue;
+    color: black;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.page-container {
+    margin: 0 auto;
+}
+
+/* 3. Header Styles */
+header {
+    width: 100%;
+}
+
+.header-inner {
+    margin: 0 auto;
+    background-color: #fff3b0;
+    border-bottom: 3px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-top h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 4. Search Form */
+.search-form {
+    margin: 0 auto 0.75rem auto;
+}
+
+.search-form input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* 5. Navigation */
+.navigation {
+    margin-top: 0.5rem;
+}
+
+.navigation a {
+    display: inline-block;
+    margin: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #333;
+    color: #fff3b0;
+}
+
+/* 6. Main / Articles */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.allArticles .article {
+    
+}
+
