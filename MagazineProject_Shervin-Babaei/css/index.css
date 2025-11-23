@@ -38,7 +38,6 @@ header {
 }
 
 .header-top h1 {
-    font-size: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
@@ -126,6 +125,7 @@ header {
     text-align: right;
 }
 
+/* Article Image */
 .article img {
     max-width: 100%;
     height: auto;
@@ -141,6 +141,15 @@ header {
     background-color: #fff3b0;
     padding: 1rem;
     box-sizing: border-box;
+}
+
+/* Article image */
+.article img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+    border-radius: 8px;
 }
 
 .paragaph {
@@ -176,7 +185,7 @@ header {
 
 /* 10. Media Queries */
 
-/* Mobile Styles */
+/* smaller screens */
 @media screen and (max-width: 500px) {
     .header-top h1,
     .search-form {
@@ -219,6 +228,12 @@ header {
         grid-template-columns: 1fr 2fr 1fr;
         padding: 0;
         margin: 0;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     h1,
