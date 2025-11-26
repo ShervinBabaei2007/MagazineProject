@@ -1,5 +1,5 @@
 /* 1. Fonts & Imports */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 /* 2. Reset & Global Styles */
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: lightskyblue;
     color: black;
 }
@@ -17,7 +17,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .page-container {
@@ -101,11 +101,13 @@ header {
     padding: 1.5rem;
 }
 
-/* Author line */
+/* Author position */
 .article-card .author {
     font-size: 0.95rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin: 0.5rem auto 1rem auto;
+    text-align: center;
+    width: fit-content;
 }
 
 /* Article image */
@@ -113,8 +115,20 @@ header {
     display: block;
     width: 100%;
     max-width: 900px;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     border-radius: 8px;
+    height: auto;
+}
+
+/* Article h2 position */
+.article-card h2 {
+    text-align: center;
+}
+
+/* publication position */
+.article-card .publication {
+    font-size: 0.95rem;
+    text-align: center;
 }
 
 .spacing {

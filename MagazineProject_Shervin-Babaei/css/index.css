@@ -1,5 +1,5 @@
 /* 1. Fonts & Imports */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 /* 2. Reset & Global Styles */
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: lightskyblue;
     color: black;
 }
@@ -17,7 +17,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .page-container {
