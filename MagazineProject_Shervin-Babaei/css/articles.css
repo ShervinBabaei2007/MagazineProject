@@ -114,7 +114,6 @@ header {
 .article-card img {
     display: block;
     width: 100%;
-    max-width: 900px;
     margin: 1.5rem auto;
     border-radius: 8px;
     height: auto;
@@ -122,13 +121,16 @@ header {
 
 /* Article h2 position */
 .article-card h2 {
+    font-size: 1.75rem;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 /* publication position */
 .article-card .publication {
     font-size: 0.95rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .spacing {
