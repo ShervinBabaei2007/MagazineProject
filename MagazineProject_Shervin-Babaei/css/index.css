@@ -3,250 +3,254 @@
 
 /* 2. Reset & Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: lightskyblue;
-    color: black;
+  font-family: 'Inter', sans-serif;
+  background-color: lightskyblue;
+  color: black;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .page-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* 3. Header Styles */
 header {
-    width: 100%;
+  width: 100%;
 }
 
 .header-inner {
-    margin: 0 auto;
-    background-color: #fff3b0;
-    border-bottom: 3px solid black;
-    padding: 1rem;
-    text-align: center;
+  margin: 0 auto;
+  background-color: #fff3b0;
+  border-bottom: 3px solid black;
+  padding: 1rem;
+  text-align: center;
 }
 
 .header-top h1 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* 4. Search Form */
 .search-form {
-    display: block;
-    margin: 0 auto 0.75rem auto;
+  display: block;
+  margin: 0 auto 0.75rem auto;
 }
 
 .search-form input {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
 }
 
 /* 5. Navigation */
 .navigation {
-    display: block;
-    text-align: center;
-    padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 .navigation a {
-    display: inline-block;
-    margin: 0.25rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    color: black;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    transition: all 0.5s ease;
+  display: inline-block;
+  margin: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  transition: all 0.5s ease;
 }
 
 .navigation a:hover {
-    background-color: #333;
-    color: #fff3b0;
+  background-color: #333;
+  color: #fff3b0;
 }
 
 /*  6. Main Content Wrapper */
 .wrapper {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 /* 7. Featured Article (Homepage) */
 .featured-article {
-    background-color: #fff3b0;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 2rem;
+  background-color: #fff3b0;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .featured-article h2 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* 8. Articles Grid & Individual Article */
 .articles-grid {
-    text-align: center;
+  text-align: center;
 }
 
 .articles-grid .article {
-    display: block;
-    margin: 2rem 1rem 0 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 1rem;
-    box-sizing: border-box;
+  display: block;
+  margin: 2rem 1rem 0 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .article h3 {
-    text-align: left;
-    margin-top: 1.75rem;
+  text-align: center;
+  /* margin-top: 1.75rem; */
+  margin: 0.5rem auto 1rem auto;
 }
 
 .article h4 {
-    text-align: right;
+  text-align: right;
 }
 
 /* Article Image */
 .article img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 /* Article paragraph box */
 .article-paragaph .paragaph {
-    display: block;
-    margin: 0.5rem;
-    border: 2px solid black;
-    background-color: #fff3b0;
-    padding: 1rem;
-    box-sizing: border-box;
+  display: block;
+  margin: 5.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  background-color: #fff3b0;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* Article image */
 .article img {
-    display: block;
-    width: 100%;
-    max-width: 900px;
-    margin: 1rem auto;
-    border-radius: 8px;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 1rem auto;
+  border-radius: 8px;
 }
 
 .paragaph {
-    text-align: left;
+  text-align: left;
 }
 
 .paragaph .spacing {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* 9. Read More Buttons */
 .ReadMore {
-    text-align: left;
-    margin-top: 1rem;
+  text-align: left;
+  margin-top: 1rem;
 }
 
 .readMore {
-    display: inline-block;
-    padding: 0.5rem 1.2rem;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 1.125rem;
-    margin-bottom: 0;
-    transition: background-color 0.5s ease;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1.125rem;
+  margin-bottom: 0;
+  transition: background-color 0.5s ease;
 }
 
 .readMore:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 /* 10. Media Queries */
 
 /* smaller screens */
 @media screen and (max-width: 500px) {
-    .header-top h1,
-    .search-form {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
+  .header-top h1,
+  .search-form {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 
-    .header-top h1 {
-        font-size: 1.5rem;
-    }
+  .header-top h1 {
+    font-size: 1.5rem;
+  }
 
-    .search-form input {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
+  .search-form input {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 
-    .navigation {
-        white-space: nowrap;
-        overflow-x: auto;
-        text-align: center;
-        padding: 0.5rem 0;
-    }
+  .navigation {
+    white-space: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
 
-    .navigation a {
-        display: inline-block;
-        width: auto;
-        margin: 0.25rem;
-        font-size: 0.9rem;
-        padding: 0.5rem 0.75rem;
-    }
+  .navigation a {
+    display: inline-block;
+    width: auto;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 1000px) {
-    .header-inner {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        padding: 0;
-        margin: 0;
-    }
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  }
 
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-    h1,
-    .search-form {
-        padding-top: 0.8rem;
-    }
+  h1,
+  .search-form {
+    padding-top: 0.8rem;
+  }
 
-    .search-article-bar {
-        grid-column: 3;
-    }
+  .search-article-bar {
+    grid-column: 3;
+  }
 
-    .navigation {
-        grid-column: 2;
-        grid-row: 1;
-    }
+  .navigation {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
