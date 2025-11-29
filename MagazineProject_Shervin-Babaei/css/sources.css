@@ -3,165 +3,172 @@
 
 /* 2. Reset & Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: lightskyblue;
-    color: black;
+  font-family: 'Inter', sans-serif;
+  background-color: lightskyblue;
+  color: black;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .page-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* 3. Header Styles */
 header {
-    width: 100%;
+  width: 100%;
 }
 
 .header-inner {
-    margin: 0 auto;
-    background-color: #fff3b0;
-    border-bottom: 3px solid black;
-    padding: 1rem;
-    text-align: center;
+  margin: 0 auto;
+  background-color: #fff3b0;
+  border-bottom: 3px solid black;
+  padding: 1rem;
+  text-align: center;
 }
 
 .header-top h1 {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 /* 4. Navigation */
 .navigation {
-    display: block;
-    text-align: center;
-    padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 .navigation a {
-    display: inline-block;
-    margin: 0.25rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    color: black;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0.25rem;
+
+  text-decoration: none;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+
+  /* tiny animation*/
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, transform 0.25s ease;
 }
 
 .navigation a:hover {
-    background-color: #333;
-    color: #fff3b0;
+  background-color: #333;
+  color: #fff3b0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+  transform: translateY(-6px);
 }
 
 /* 5. Table Styles */
 .sources-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    font-size: 1.1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
 .sources-table caption {
-    caption-side: top;
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: #000000;
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #000000;
 }
 
 .sources-table th,
 .sources-table td {
-    /* remove default borders */
-    border: none;
-    padding: 0.75rem;
-    text-align: left;
-    /* row separator */
-    border-bottom: 1px solid #ddd;
+  /* remove default borders */
+  border: none;
+  padding: 0.75rem;
+  text-align: left;
+  /* row separator */
+  border-bottom: 1px solid #ddd;
 }
 
 .sources-table th {
-    background-color: #ffffff;
-    font-weight: 600;
+  background-color: #ffffff;
+  font-weight: 600;
 }
 
 /* Row hover effect */
 .sources-table tr:hover {
-    background-color: #e2f0ff;
-    transition: background-color 0.5s ease;
+  background-color: #e2f0ff;
+  transition: background-color 0.5s ease;
 }
 
 /* Image Styling */
 .sources-table img {
-    width: 12rem;
-    height: 8rem;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
+  width: 12rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
 }
 
 /* Link Styling */
 .sources-table a {
-    color: #0076fd;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    display: inline-block;
-    transition: all 0.33s ease;
+  color: #0076fd;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.33s ease;
 }
 
 /* lifting up slightly */
 .sources-table a:hover {
-    background-color: #fff3b0;
-    text-decoration: underline;
-    border-radius: 8px;
-    transform: translateY(-6px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.33);
+  background-color: #fff3b0;
+  text-decoration: underline;
+  border-radius: 8px;
+  transform: translateY(-6px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.33);
 }
 
 /* Extra line break for multiple links in one cell */
 .nextLine {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 /* 6. Responsive (Mobile) */
 @media (max-width: 500px) {
-    .sources-table,
-    .sources-table tbody,
-    .sources-table tr,
-    .sources-table td {
-        display: block;
-        width: 100%;
-    }
+  .sources-table,
+  .sources-table tbody,
+  .sources-table tr,
+  .sources-table td {
+    display: block;
+    width: 100%;
+  }
 
-    .sources-table thead {
-        display: none;
-    }
+  .sources-table thead {
+    display: none;
+  }
 
-    .sources-table tr {
-        margin-bottom: 1.5rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    }
+  .sources-table tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
 
-    .sources-table td {
-        border: none;
-        padding: 8px 0;
-    }
+  .sources-table td {
+    border: none;
+    padding: 8px 0;
+  }
 }
