@@ -184,6 +184,7 @@ header {
 
 .readMore:hover {
   background-color: #555;
+  transform: translateY(-4px);
 }
 
 /* 10. Media Queries */
