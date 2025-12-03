@@ -81,7 +81,7 @@ header {
   transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, transform 0.25s ease;
 }
 
-.navigation a:hover {
+.navigation a:hover, .navigation a:focus{
   background-color: #333;
   color: #fff3b0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
@@ -192,7 +192,7 @@ header {
   transition: background-color 0.5s ease;
 }
 
-.readMore:hover {
+.readMore:hover, .readMore:focus {
   background-color: #555;
   transform: translateY(-4px);
 }
