@@ -145,7 +145,7 @@ header {
 }
 
 /* 6. Responsive (Mobile) */
-@media (max-width: 500px) {
+@media (max-width: 549px) {
   .sources-table,
   .sources-table tbody,
   .sources-table tr,
