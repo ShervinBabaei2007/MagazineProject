@@ -154,6 +154,10 @@ header {
     width: 100%;
   }
 
+  .header-top h1 {
+    font-size: 1.5rem;
+  }
+
   .sources-table thead {
     display: none;
   }
@@ -170,5 +174,51 @@ header {
   .sources-table td {
     border: none;
     padding: 8px 0;
+  }
+
+  .navigation {
+    white-space: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .navigation a {
+    display: inline-block;
+    width: auto;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1000px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  h1,
+  .search-form {
+    padding-top: 0.8rem;
+  }
+
+  .search-article-bar {
+    grid-column: 3;
+  }
+
+  .navigation {
+    grid-column: 2;
+    grid-row: 1;
   }
 }
