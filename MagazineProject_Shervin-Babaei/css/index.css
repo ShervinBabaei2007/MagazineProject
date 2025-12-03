@@ -88,6 +88,12 @@ header {
   transform: translateY(-6px);
 }
 
+.navigation a:focus,
+.readMore:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
 /*  6. Main Content Wrapper */
 .wrapper {
   max-width: 1200px;
@@ -189,6 +195,17 @@ header {
 .readMore:hover {
   background-color: #555;
   transform: translateY(-4px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* 10. Media Queries */
