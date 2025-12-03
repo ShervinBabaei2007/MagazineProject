@@ -148,6 +148,7 @@ textarea {
 
 .contact-box button:hover {
   background-color: #555;
+  cursor: pointer;
 }
 
 /* MOBILE */
