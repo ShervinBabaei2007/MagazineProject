@@ -144,7 +144,7 @@ header {
   white-space: pre-wrap;
 }
 
-/* 6. Responsive (Mobile) */
+/* 6. Responsive */
 @media (max-width: 549px) {
   .sources-table,
   .sources-table tbody,
