@@ -144,6 +144,11 @@ header {
   white-space: pre-wrap;
 }
 
+.captionSpaces {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* 6. Responsive */
 @media (max-width: 549px) {
   .sources-table,
