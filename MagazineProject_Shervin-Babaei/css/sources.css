@@ -258,9 +258,9 @@ header {
     width: 100%;
   }
 
-  .header-top h1 {
+  /* .header-top h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   .sources-table thead {
     display: none;

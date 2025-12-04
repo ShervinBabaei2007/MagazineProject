@@ -62,7 +62,8 @@ header {
 
 /* 5. Navigation */
 .navigation {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  padding: 0.5rem 0;
 }
 
 .navigation a {

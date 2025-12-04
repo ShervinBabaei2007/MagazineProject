@@ -285,9 +285,9 @@ header {
     margin-bottom: 0.5rem;
   }
 
-  .header-top h1 {
+  /* .header-top h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   .search-form input {
     width: 100%;

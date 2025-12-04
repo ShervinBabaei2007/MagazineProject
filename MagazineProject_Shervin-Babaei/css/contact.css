@@ -64,7 +64,8 @@ header {
 /* NAVIGATION */
 .navigation {
   text-align: center;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  padding: 0.5rem 0;
 }
 
 .navigation a {
@@ -242,9 +243,9 @@ textarea {
 
 /* Small screen */
 @media screen and (max-width: 549px) {
-  .header-top h1 {
+  /* .header-top h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   .button-row {
     flex-direction: column;
@@ -268,6 +269,12 @@ textarea {
     margin: 0.25rem;
     font-size: 0.9rem;
     padding: 0.5rem 0.75rem;
+  }
+
+  .search-form input {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 
