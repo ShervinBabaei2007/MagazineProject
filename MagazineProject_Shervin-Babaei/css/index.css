@@ -27,13 +27,16 @@ h3 {
 /* 3. Header Styles */
 header {
   width: 100%;
+  background-color: #fff3b0;
+  border-bottom: 3px solid black;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .header-inner {
   margin: 0 auto;
-  background-color: #fff3b0;
-  border-bottom: 3px solid black;
-  padding: 1rem;
+
   text-align: center;
 }
 
@@ -45,6 +48,8 @@ header {
 .search-form {
   display: block;
   margin: 0 auto 0.75rem auto;
+
+  flex-grow: 1;
 }
 
 .search-form input {
@@ -81,7 +86,8 @@ header {
   transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, transform 0.25s ease;
 }
 
-.navigation a:hover, .navigation a:focus{
+.navigation a:hover,
+.navigation a:focus {
   background-color: #333;
   color: #fff3b0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
@@ -92,6 +98,35 @@ header {
 .readMore:focus {
   outline: 2px solid black;
   outline-offset: 2px;
+}
+
+/* 5.5 Theme toggle */
+.header-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.theme-toggle {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0.125rem solid black;
+  border-radius: 50%;
+  background-color: white;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 
 /*  6. Main Content Wrapper */
@@ -192,7 +227,8 @@ header {
   transition: background-color 0.5s ease;
 }
 
-.readMore:hover, .readMore:focus {
+.readMore:hover,
+.readMore:focus {
   background-color: #555;
   transform: translateY(-4px);
 }
@@ -206,6 +242,16 @@ header {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.search-article-bar {
+  /* flex for theme changer + search bar */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 /* 10. Media Queries */
@@ -247,13 +293,12 @@ header {
 }
 
 /* Desktop Styles */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .header-inner {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 0;
     margin: 0;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   }
 
   header {
@@ -262,18 +307,18 @@ header {
     z-index: 1000;
   }
 
-  h1,
-  .search-form {
-    padding-top: 0.8rem;
-  }
-
   .search-article-bar {
     grid-column: 3;
+    padding-top: 0.8rem;
   }
 
   .navigation {
     grid-column: 2;
     grid-row: 1;
+  }
+
+  .theme-toggle-container {
+    grid-column: 3;
   }
 }
 
