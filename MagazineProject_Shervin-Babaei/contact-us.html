@@ -7,14 +7,27 @@
 
     <!-- Use the same CSS setup as homepage -->
     <link rel="stylesheet" href="css/contact.css" />
+    <script src="theme-toggle/darkMode.js" defer></script>
   </head>
 
   <body>
     <div class="page-container">
+      <!-- Header -->
       <header>
         <div class="header-inner">
           <div class="header-top">
             <h1>Soccer Weekly</h1>
+          </div>
+
+          <div class="search-article-bar">
+            <form class="search-form">
+              <label for="searching" class="visually-hidden">Search articles</label>
+              <input type="text" name="search-bar" id="searching" placeholder="Search articles..." />
+            </form>
+
+            <div class="theme-toggle-container">
+              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle background theme">🌓</button>
+            </div>
           </div>
 
           <nav class="navigation">
