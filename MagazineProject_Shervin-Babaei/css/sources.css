@@ -96,6 +96,7 @@ header {
 
 /* 5. Table Styles */
 .sources-table {
+  background-color:rgba(209, 234, 250, 0.7);
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;

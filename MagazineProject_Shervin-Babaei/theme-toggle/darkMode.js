@@ -7,7 +7,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
   // regular and dark mode
   const LIGHT_BG = `lightskyblue`;
-  const DARK_BG = `#25437a`; // bit more darker, better for the eyes
+  const DARK_BG = `#4F75BA`; // bit more darker, better for the eyes
 
   // save prefrence to local Storage
   const savedTheme = localStorage.getItem(`soccerWeeklyTheme`) || `light`;
