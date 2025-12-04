@@ -12,6 +12,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: lightskyblue;
   color: black;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
@@ -96,7 +98,7 @@ header {
 
 /* 5. Table Styles */
 .sources-table {
-  background-color:rgba(209, 234, 250, 0.7);
+  background-color: rgba(209, 234, 250, 0.7);
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;

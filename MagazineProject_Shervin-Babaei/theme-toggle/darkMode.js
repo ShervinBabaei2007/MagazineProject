@@ -2,23 +2,23 @@ document.addEventListener(`DOMContentLoaded`, () => {
   const body = document.body;
   const toggleBtn = document.getElementById(`theme-toggle`);
 
-  // in case buttojn is not on page.
-  if (!toggleBtn) return;
+  // save prefrence to local Storage
+  const savedTheme = localStorage.getItem(`soccerWeeklyTheme`) || `light`;
 
   // regular and dark mode
   const LIGHT_BG = `lightskyblue`;
   const DARK_BG = `#4F75BA`; // bit more darker, better for the eyes
 
-  // save prefrence to local Storage
-  const savedTheme = localStorage.getItem(`soccerWeeklyTheme`) || `light`;
-
   if (savedTheme === `dark`) {
     body.style.backgroundColor = DARK_BG;
-    toggleBtn.textContent = `☀️`; // sun = bright mode (you are in dark bg)
+    if (toggleBtn) toggleBtn.textContent = `☀️`; // sun = bright mode (you are in dark bg)
   } else {
     body.style.backgroundColor = LIGHT_BG;
-    toggleBtn.textContent = `🌙`; // Moon = night mode (you are in light bg)
+    if (toggleBtn) toggleBtn.textContent = `🌙`; // Moon = night mode (you are in light bg)
   }
+
+  // in case button is not on page.
+  if (!toggleBtn) return;
 
   toggleBtn.addEventListener(`click`, () => {
     {

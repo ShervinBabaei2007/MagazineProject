@@ -12,6 +12,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: lightskyblue;
   color: black;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
