@@ -320,6 +320,10 @@ header {
   .theme-toggle-container {
     grid-column: 3;
   }
+
+  .header-top h1 {
+    margin-top: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {

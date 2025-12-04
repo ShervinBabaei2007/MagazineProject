@@ -275,4 +275,8 @@ header {
   .theme-toggle-container {
     grid-column: 3;
   }
+
+  .header-top h1 {
+    margin-top: 0.8rem;
+  }
 }
