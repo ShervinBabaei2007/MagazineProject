@@ -31,7 +31,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         localStorage.setItem(`soccerWeeklyTheme`, `dark`);
       } else {
         // switch it to light
-        body.style.background = LIGHT_BG;
+        body.style.backgroundColor = LIGHT_BG;
         toggleBtn.textContent = `🌙`;
         localStorage.setItem(`soccerWeeklyTheme`, `light`);
       }
