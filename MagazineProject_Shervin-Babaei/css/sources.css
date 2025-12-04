@@ -168,8 +168,14 @@ header {
 }
 
 .captionSpaces {
-  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
   padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 /* 5.5 Theme toggle */
@@ -301,6 +307,12 @@ header {
 
   .header-top h1 {
     margin-top: 0.8rem;
+  }
+
+  .captionSpaces {
+    padding-top: 2rem;
+
+    font-size: 1.25rem;
   }
 }
 
