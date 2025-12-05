@@ -94,12 +94,6 @@ header {
   transform: translateY(-6px);
 }
 
-.navigation a:focus,
-.readMore:focus {
-  outline: 2px solid black;
-  outline-offset: 2px;
-}
-
 /* 5.5 Theme toggle */
 .header-tools {
   display: flex;
