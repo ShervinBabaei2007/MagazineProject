@@ -8,10 +8,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: lightskyblue;
   color: black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-push {
+  margin-top: auto;
 }
 
 h1,
@@ -22,6 +33,7 @@ h3 {
 
 .page-container {
   margin: 0 auto;
+  width: 100%;
 }
 
 /* HEADER - Consistent With Homepage */
@@ -32,6 +44,8 @@ header {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   padding: 0 1rem;
+
+  flex-shrink: 0;
 }
 
 .header-inner {
@@ -223,7 +237,6 @@ textarea {
 }
 
 /* last part (footer) */
-
 .ownerArticle {
   width: 100%;
   text-align: center;
