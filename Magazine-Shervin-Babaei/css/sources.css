@@ -248,8 +248,9 @@ header {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* 6. Responsive */
 @media (max-width: 549px) {
+
+  /* Turn table into cards */
   .sources-table,
   .sources-table tbody,
   .sources-table tr,
@@ -258,41 +259,74 @@ header {
     width: 100%;
   }
 
-  /* .header-top h1 {
-    font-size: 1.5rem;
-  } */
-
   .sources-table thead {
     display: none;
   }
 
+  /* Card styling */
   .sources-table tr {
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    /* Reduce a bit tall cards */
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
   }
 
+  /* img larger, better readability/seeing */
+  .sources-table img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.4rem;
+    object-fit: cover;
+  }
+
+  /* Author / source text */
   .sources-table td {
+    padding: 0.3rem 0;
     border: none;
-    padding: 8px 0;
+    font-size: 1.125rem;
+  }
+
+  /* Make img source link bit better/cleaner */
+  .sources-table a {
+    display: inline-block;
+    padding: 0.4rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+
+    background-color: transparent;
+    border-radius: 6px;
+  }
+
+  .sources-table a:hover,
+  .sources-table a:focus {
+    transform: none;
+    box-shadow: none;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .captionSpaces {
+    font-size: 1.05rem;
+    padding: 1rem 0;
   }
 
   .navigation {
     white-space: nowrap;
     overflow-x: auto;
-    text-align: center;
     padding: 0.5rem 0;
   }
 
   .navigation a {
-    display: inline-block;
-    width: auto;
-    margin: 0.25rem;
     font-size: 0.9rem;
     padding: 0.5rem 0.75rem;
+    margin: 0.25rem;
   }
 }
 
